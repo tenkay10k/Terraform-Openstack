@@ -1,0 +1,13 @@
+#cloud-config
+
+users:
+  - default
+  - name: alae
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: sudo
+    ssh_import_id:
+    lock_passwd: false
+    password: 123456
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDiRnLuNQ5HU26gD7nBlLHCcPfKSc1p2jJctqG+UUSU6ydRIKToR7W89Co9gdwfcZIzaB6vdLO1xdfck6Aqy2vyynlTrf36sW26Gkf9kLbYBCZ90nSDlS456ds6hFcY6OIdk/lxA0uYyRsoo7lHPkewHpHRX/tEMQD6vA332dKvESOTMLZgisHvPYbWWcTU6SpiTquXbzFbvCMVdBzl9EaH3C9Wf88RH5klLg/MUq4Y2r0C51KaEhqIz+Sfy3IK1rAq8X9d0D+25kHTVGkq0MOrwt4L2gn5A7XpsydXrL9wxUhl6wzAa6RlUuMBcXQBJYgCWtiUe0nk4LYe63GjUCBT Generated-by-Nova
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTBZkWWuUHNahSjQZtmeoQYjMvmHe1WYuCTCeqE2Y5EbSlbhQA7u ansible
